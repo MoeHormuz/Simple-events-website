@@ -153,7 +153,7 @@ router.get('/edit/:id', isAuthenticated, (req, res) => {
 // update the form
 
 router.post('/update', [
-    check('title').isLength({ min: 5 }).withMessage('Title should be more than 5 char'),
+    check('title').isLength({ min: 3 }).withMessage('Title should be more than 2 char'),
     check('description').isLength({ min: 5 }).withMessage('Description should be more than 5 char'),
     check('location').isLength({ min: 3 }).withMessage('Location should be more than 5 char'),
     check('date').isLength({ min: 5 }).withMessage('Date should valid Date'),
