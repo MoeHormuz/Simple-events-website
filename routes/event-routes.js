@@ -14,37 +14,65 @@ isAuthenticated = (req, res, next) => {
 }
 
 
-
-// route to home events
-router.get('/', (req, res) => {
-    Event.find({}, (err, events) => {
-        //     res.json(events)
-        let chunk = []
-        let chunkSize = 3
-        for (let i = 0; i < events.length; i += chunkSize) {
-            chunk.push(events.slice(i, chunkSize + i))
-        }
-        //res.json(chunk)
-        res.render('event/index', {
-            chunk: chunk,
-            message: req.flash('info')
-        })
-    })
-
-})
-
-//Add new events
-
+//create new events
 router.get('/create', isAuthenticated, (req, res) => {
 
     res.render('event/create', {
         errors: req.flash('errors')
     })
 })
+
+
+
+// route to home events & pagination:
+router.get('/:pageNo?', (req, res) => {
+
+    let pageNo = 1
+
+    if (req.params.pageNo) {
+        pageNo = parseInt(req.params.pageNo);
+        if (req.params.pageNo == 0) {
+            pageNo = 1
+        }
+    }
+
+    let skip_and_limit = {
+        skip: 6 * (pageNo - 1),
+        limit: 6
+    }
+
+    // find total documents:
+    let totalDocs = 0
+
+    Event.countDocuments({}, (err, total) => {
+
+    }).then((response) => {
+        totalDocs = parseInt(response)
+        Event.find({}, {}, skip_and_limit, (err, events) => {
+            //res.json(events)
+            let chunk = []
+            let chunkSize = 3
+            for (let i = 0; i < events.length; i += chunkSize) {
+                chunk.push(events.slice(i, chunkSize + i))
+            }
+            //res.json(chunk)
+            res.render('event/index', {
+                chunk: chunk,
+                message: req.flash('info'),
+                total: parseInt(totalDocs),
+                pageNo: pageNo
+            })
+        }).sort({ _id: -1 })
+    })
+
+})
+
+
+
 // save event to db
 
 router.post('/create', [
-    check('title').isLength({ min: 5 }).withMessage('Title should be more than 5 char'),
+    check('title').isLength({ min: 3 }).withMessage('Title should be more than 2 char'),
     check('description').isLength({ min: 5 }).withMessage('Description should be more than 5 char'),
     check('location').isLength({ min: 3 }).withMessage('Location should be more than 5 char'),
     check('date').isLength({ min: 5 }).withMessage('Date should valid Date'),
@@ -82,7 +110,7 @@ router.post('/create', [
 })
 
 // show single event
-router.get('/:id', (req, res) => {
+router.get('/show/:id', (req, res) => {
     Event.findOne({ _id: req.params.id }, (err, event) => {
 
         if (!err) {
