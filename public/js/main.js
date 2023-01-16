@@ -47,3 +47,8 @@ function readURL(input) {
 function cancelBTN() {
     window.location.href = '/users/profile'
 }
+
+
+// Footer Date:
+const element = document.getElementById('footerDate')
+element.innerHTML = new Date().getFullYear()
