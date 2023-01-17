@@ -5,66 +5,139 @@ const Event = require('../models/Evnet')
 let newEvents = [
 
     new Event({
-        title: 'beach cleaning at Muscat',
-        description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-        location: 'Muscat',
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
         date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
         created_at: Date.now()
     }),
     new Event({
-        title: 'beach cleaning at Oman',
-        description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-        location: 'Oman',
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
         date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
         created_at: Date.now()
     }),
     new Event({
-        title: 'beach cleaning at Sohar',
-        description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-        location: 'Muscat',
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
         date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
         created_at: Date.now()
     }),
     new Event({
-        title: 'beach cleaning at Nizwa',
-        description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-        location: 'Nizwa',
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
         date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
         created_at: Date.now()
     }),
     new Event({
-        title: 'beach cleaning at Sur',
-        description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-        location: 'Sur',
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
         date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
         created_at: Date.now()
     }),
     new Event({
-        title: 'beach cleaning at Sur',
-        description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-        location: 'Sur',
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
         date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
         created_at: Date.now()
     }),
     new Event({
-        title: 'beach cleaning at Sur',
-        description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-        location: 'Sur',
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
         date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
         created_at: Date.now()
     }),
     new Event({
-        title: 'beach cleaning at Sur',
-        description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-        location: 'Sur',
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
         date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
         created_at: Date.now()
     }),
     new Event({
-        title: 'beach cleaning at Sur',
-        description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-        location: 'Sur',
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
         date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
+        created_at: Date.now()
+    }),
+    new Event({
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
+        date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
+        created_at: Date.now()
+    }),
+    new Event({
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
+        date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
+        created_at: Date.now()
+    }),
+    new Event({
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
+        date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
+        created_at: Date.now()
+    }),
+    new Event({
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
+        date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
+        created_at: Date.now()
+    }),
+    new Event({
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
+        date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
+        created_at: Date.now()
+    }),
+    new Event({
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
+        date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
+        created_at: Date.now()
+    }),
+    new Event({
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
+        date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
+        created_at: Date.now()
+    }),
+    new Event({
+        title: 'Website Author',
+        description: "Hi, i'm Moe Hormuz, a Back-End developer, i use Node js technology with the Express framework and the MongoDB for back-end development, you can contact me at the following mail: moehormuz@gmail.com it's a pleasure working with you",
+        location: 'jeddah',
+        date: Date.now(),
+        user_id: "63c3d0c1c8e45c4480c49607",
         created_at: Date.now()
     }),
     

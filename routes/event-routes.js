@@ -75,7 +75,7 @@ router.post('/create', [
     check('title').isLength({ min: 3 }).withMessage('Title should be more than 2 char'),
     check('description').isLength({ min: 5 }).withMessage('Description should be more than 5 char'),
     check('location').isLength({ min: 3 }).withMessage('Location should be more than 5 char'),
-    check('date').isLength({ min: 5 }).withMessage('Date should valid Date'),
+    /* check('date').isLength({ min: 5 }).withMessage('Date should valid Date'), */
 
 ], (req, res) => {
 
@@ -90,7 +90,8 @@ router.post('/create', [
         let newEvent = new Event({
             title: req.body.title,
             description: req.body.description,
-            date: req.body.date,
+            /* date: req.body.date, */
+            date: Date.now().toString(),
             location: req.body.location,
             user_id: req.user.id,
             created_at: Date.now()
@@ -156,7 +157,7 @@ router.post('/update', [
     check('title').isLength({ min: 3 }).withMessage('Title should be more than 2 char'),
     check('description').isLength({ min: 5 }).withMessage('Description should be more than 5 char'),
     check('location').isLength({ min: 3 }).withMessage('Location should be more than 5 char'),
-    check('date').isLength({ min: 5 }).withMessage('Date should valid Date'),
+    /* check('date').isLength({ min: 5 }).withMessage('Date should valid Date'), */
 
 ], isAuthenticated, (req, res) => {
 
@@ -171,7 +172,7 @@ router.post('/update', [
             title: req.body.title,
             description: req.body.description,
             location: req.body.location,
-            date: req.body.date
+            /* date: req.body.date */
         }
         let query = { _id: req.body.id }
 
